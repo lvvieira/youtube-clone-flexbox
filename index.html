@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone do YouTube</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube Clone</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <i class="fas fa-video"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="main-container">
+        <!-- Barra Lateral -->
+        <nav class="sidebar">
+            <ul>
+                <li><i class="fas fa-home"></i> Início</li>
+                <li><i class="fas fa-fire"></i> Em alta</li>
+                <li><i class="fas fa-thumbs-up"></i> Recomendados</li>
+                <li><i class="fas fa-history"></i> Histórico</li>
+            </ul>
+        </nav>
+
+        <!-- Grade de vídeos -->
+        <main class="video-grid">
+            <div class="video-card">
+                <img src="https://via.placeholder.com/320x180" alt="Thumbnail">
+                <h3>Título do vídeo</h3>
+                <p>Canal • 1.2M visualizações • há 2 dias</p>
+            </div>
+            <div class="video-card">
+                <img src="https://via.placeholder.com/320x180" alt="Thumbnail">
+                <h3>Título do vídeo</h3>
+                <p>Canal • 1.2M visualizações • há 2 dias</p>
+            </div>
+            <div class="video-card">
+                <img src="https://via.placeholder.com/320x180" alt="Thumbnail">
+                <h3>Título do vídeo</h3>
+                <p>Canal • 1.2M visualizações • há 2 dias</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Estilos base -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 1.5em;
+        }
+        .search-bar {
+            display: flex;
+            flex: 1;
+            max-width: 600px;
+        }
+        .search-bar input {
+            flex: 1;
+            padding: 5px;
+        }
+        .search-bar button {
+            padding: 5px;
+            cursor: pointer;
+        }
+        .user-actions i {
+            margin-left: 15px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .main-container {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f1f1f1;
+            padding: 20px;
+            height: 100vh;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .video-card {
+            width: 320px;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .video-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</body>
+</html>
